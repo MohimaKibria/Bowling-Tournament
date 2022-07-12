@@ -4,7 +4,7 @@
 #include <fstream>
 
 using namespace std;
-#define rounds 4
+#define rounds 5
 const string scores = "BowlingScores.txt";//avoid hardcoding file name
 char z = '*', s = ' ';
 
@@ -42,7 +42,7 @@ int main()
 }
 void PrettyPrintResults(Tournament players[], int sum) {
 
-cout<<"Players"<<setw(5) << setfill(' ') << s << "Round#1"<< setw(5) << setfill(' ') << s << "Round#2" << setw(5) << setfill(' ') << s <<"Round#3"<< setw(5) << setfill(' ') << s <<"Round#4" << setw(5) << setfill(' ') << s  << "Average" << endl;//outputs each round of scores with spaces inbetween
+cout<<"Players"<<setw(5) << setfill(' ') << s << "Round#1"<< setw(5) << setfill(' ') << s << "Round#2" << setw(5) << setfill(' ') << s <<"Round#3"<< setw(5) << setfill(' ') << s <<"Round#4" << setw(5) << setfill(' ') << s <<"Round#5" << setw(5) << setfill(' ') << s << "Average" << endl;//outputs each round of scores with spaces inbetween
 
     for (int i = 0; i < sum; i++) {
         cout << left << setw(15) << players[i].contestant;//the dot operator is used throughout this code. Here it is used to access each players name in the loop.
